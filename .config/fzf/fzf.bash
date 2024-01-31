@@ -1,13 +1,13 @@
 # Setup fzf
 # ---------
-if [[ ! "$PATH" == */Users/master/.config/.fzf/bin* ]]; then
-  PATH="${PATH:+${PATH}:}/Users/master/.config/.fzf/bin"
+if [[ ! "$PATH" == *$HOME/.config/.fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}$HOME/.config/.fzf/bin"
 fi
 
 # Auto-completion
 # ---------------
-source "/Users/master/.config/.fzf/shell/completion.bash"
+source "$HOME/.config/.fzf/shell/completion.bash"
 
 # Key bindings
 # ------------
-source "/Users/master/.config/.fzf/shell/key-bindings.bash"
+source "$HOME/.config/.fzf/shell/key-bindings.bash"
